@@ -1,139 +1,143 @@
 * {
-    margin: 0 auto;
-    max-width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 // nav Bar
 #navBar h1 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
 }
 
 #navBar ul {
-    display: flex;
-    list-style: none;
-    align-content: flex-start;
-    background-color: rgba(250, 235, 215, 0.355);
+  display: flex;
+  list-style: none;
+  align-content: flex-start;
+  background-color: rgba(250, 235, 215, 0.355);
 }
-
 
 #navBar li:hover {
-    cursor: pointer;
-    color:rgb(127, 229, 255);
+  cursor: pointer;
+  color: rgb(127, 229, 255);
 }
-
+#navBar {
+  margin-bottom: 0.8rem;
+}
 // main content
 #heroImage {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 // tour dates section of the website
 #title {
-    text-align: center;
-    background-color: A6C2C6;
-    padding: 1rem 0;
+  text-align: center;
+  background-color: A6C2C6;
+  padding: 1rem 0;
 }
 
 #tourDates {
-    width: 100%;
-    background-color: A6C2C6;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    // font-weight: 600;
+  width: 100%;
+  background-color: A6C2C6;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  // font-weight: 600;
 }
 
 #tourDates p {
-    text-align: center;
-    margin-bottom: .25rem;
-    margin-top: .10rem;
-    font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.25rem;
+  margin-top: 0.1rem;
+  font-weight: 500;
 }
 
 #tourDates input {
-    text-align: center;
-    margin: .5rem .25rem 1.5rem 0;
-    background-color: black;
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: .5rem;
-    border: black;
-    letter-spacing: .5px;
-    word-spacing: 5px;
+  text-align: center;
+  margin: 0.5rem 0.25rem 1.5rem 0;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border: black;
+  letter-spacing: 0.5px;
+  word-spacing: 5px;
 }
 
 #tourDates input:hover {
-    cursor: pointer;
-    background-color: #65858A;
+  cursor: pointer;
+  background-color: #65858a;
 }
 
 #tourDates button {
-    text-align: center;
-    margin: .5rem .25rem 1.5rem 0;
-    background-color: black;
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: .5rem;
-    border: black;
-    letter-spacing: .5px;
-    word-spacing: 5px;
+  text-align: center;
+  margin: 0.5rem 0.25rem 1.5rem 0;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border: black;
+  letter-spacing: 0.5px;
+  word-spacing: 5px;
 }
 
 #tourDates button:hover {
-    cursor: pointer;
-    background-color: #65858A;
+  cursor: pointer;
+  background-color: #65858a;
 }
 
-// 
+#photos img {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  margin: auto;
+}
 
+#photos div {
+  width: 80%;
+  background-color: black;
+}
 
-// footer 
+// footer
 #footer {
-    background-color: black;
-    color:white;
-    padding: 1rem 0;
+  background-color: black;
+  color: white;
+  padding: 1rem 0;
 }
 
 .footerHorizontal {
-    display: flex;
-    justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 15% 15% 25% 40%; //Wir konnten mit flex nicht links den content verschieben, paragrahen sind erstellt worden, ABER am wichtigsten:mit Grid haben wir es lösen können!!
+  margin-bottom: 1rem;
+  grid-column: 1 / 3;
+  margin-left: 1rem;
+  gap: 0.1rem;
+  justify-content: flex-start;
+  flex-direction: row;
 }
-.footerHorizontal ul {
-    display: flex;
-    // justify-content: flex-start;
-    list-style: none;
-}
-
-.footerHorizontal li {
-    display: flex;
-    justify-content: flex-start;
+.socialMedia {
+  display: inline;
 }
 
 .footerVertical ul {
-    display: flex;
-    list-style: none;
-    flex-direction: column;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
 }
 
-@media screen and (max-width: 321px) {
-    #galleryContainer{
-        /* grid-template-columns: 1fr; */
-       
-    }
+@media screen and (min-width: px) and (max-width: 768px) {
+  #galleryContainer {
+    /* grid-template-columns: 1fr 1fr; */
+  }
 }
-
-@media screen and (min-width: 322px) and (max-width: 768px) {
-    #galleryContainer{
-        /* grid-template-columns: 1fr 1fr; */
-    }
-}
-
 
 @media screen and (min-width: 768px) and (max-width: 1050px) {
-    #galleryContainer{
-        /* grid-template-columns: 1fr 1fr 1fr; */
-    }
+  #galleryContainer {
+    /* grid-template-columns: 1fr 1fr 1fr; */
+  }
 }
