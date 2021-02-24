@@ -98,6 +98,13 @@
   background-color: #65858a;
 }
 
+#photos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
 #photos img {
   display: -ms-grid;
   display: grid;
@@ -108,11 +115,6 @@
   -o-object-fit: cover;
      object-fit: cover;
   margin: auto;
-}
-
-#photos div {
-  width: 80%;
-  background-color: black;
 }
 
 #footer {
@@ -156,16 +158,14 @@
           flex-direction: column;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1440px) {
+@media screen and (min-width: 500px) and (max-width: 1440px) {
   #tourDates {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  #photos img {
+  #photos {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    width: 20%;
-    height: 20rem;
   }
 }
 /*# sourceMappingURL=index_styles.css.map */
