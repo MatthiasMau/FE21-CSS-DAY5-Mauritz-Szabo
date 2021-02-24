@@ -1,0 +1,76 @@
+* {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#navBar h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background-color: rgba(250, 235, 215, 0.355);
+}
+
+#navBar li:hover {
+  cursor: pointer;
+  color: #7fe5ff;
+}
+
+#heroImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#title {
+  text-align: center;
+  background-color: A6C2C6;
+}
+
+#tourDates {
+  background-color: A6C2C6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+#tourDates input {
+  margin-top: .5rem;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 321px) {
+  #galleryContainer {
+    /* grid-template-columns: 1fr; */
+  }
+}
+
+@media screen and (min-width: 322px) and (max-width: 768px) {
+  #galleryContainer {
+    /* grid-template-columns: 1fr 1fr; */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+  #galleryContainer {
+    /* grid-template-columns: 1fr 1fr 1fr; */
+  }
+}
+/*# sourceMappingURL=index_styles.css.map */
