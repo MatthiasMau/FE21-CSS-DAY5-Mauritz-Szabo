@@ -3,11 +3,7 @@
     max-width: 100%;
 }
 
-#navBar {
-
-
-}
-
+// nav Bar
 #navBar h1 {
     display: flex;
     justify-content: center;
@@ -20,22 +16,27 @@
     background-color: rgba(250, 235, 215, 0.355);
 }
 
+
 #navBar li:hover {
     cursor: pointer;
     color:rgb(127, 229, 255);
 }
 
+// main content
 #heroImage {
     display: flex;
     width: 100%;
 }
 
+// tour dates section of the website
 #title {
     text-align: center;
     background-color: A6C2C6;
+    padding: 1rem 0;
 }
 
 #tourDates {
+    width: 100%;
     background-color: A6C2C6;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -43,13 +44,80 @@
     // font-weight: 600;
 }
 
+#tourDates p {
+    text-align: center;
+    margin-bottom: .25rem;
+    margin-top: .10rem;
+    font-weight: 500;
+}
+
 #tourDates input {
-    margin-top: .5rem;
+    text-align: center;
+    margin: .5rem .25rem 1.5rem 0;
     background-color: black;
     color: white;
     font-weight: 600;
     text-transform: uppercase;
+    padding: .5rem;
+    border: black;
+    letter-spacing: .5px;
+    word-spacing: 5px;
 }
+
+#tourDates input:hover {
+    cursor: pointer;
+    background-color: #65858A;
+}
+
+#tourDates button {
+    text-align: center;
+    margin: .5rem .25rem 1.5rem 0;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: .5rem;
+    border: black;
+    letter-spacing: .5px;
+    word-spacing: 5px;
+}
+
+#tourDates button:hover {
+    cursor: pointer;
+    background-color: #65858A;
+}
+
+// 
+
+
+// footer 
+#footer {
+    background-color: black;
+    color:white;
+    padding: 1rem 0;
+}
+
+.footerHorizontal {
+    display: flex;
+    justify-content: flex-start;
+}
+.footerHorizontal ul {
+    display: flex;
+    // justify-content: flex-start;
+    list-style: none;
+}
+
+.footerHorizontal li {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footerVertical ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 321px) {
     #galleryContainer{
         /* grid-template-columns: 1fr; */
